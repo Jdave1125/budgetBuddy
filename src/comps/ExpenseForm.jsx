@@ -23,7 +23,7 @@ const ExpenseForm = ({ onSubmit }) => {
     };
   
     return (
-      <form onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}>
         <div>
           {/* <label>Name:</label> */}
           <input placeholder="Name" type="text" value={name} onChange={(e) => setName(e.target.value)} required />
@@ -37,10 +37,10 @@ const ExpenseForm = ({ onSubmit }) => {
           <input placeholder='Category' type="text" value={category} onChange={(e) => setCategory(e.target.value)} required />
         </div>
         <div>
-          <label>Date:</label>
+          {/* <label>Date:</label> */}
           <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
         </div>
-        <button type="submit">Add Expense</button>
+        <button className='submit' type="submit">Add Expense</button>
       </form>
     );
   };
