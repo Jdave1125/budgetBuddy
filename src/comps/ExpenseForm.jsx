@@ -25,16 +25,16 @@ const ExpenseForm = ({ onSubmit }) => {
     return (
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name:</label>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+          {/* <label>Name:</label> */}
+          <input placeholder="Name" type="text" value={name} onChange={(e) => setName(e.target.value)} required />
         </div>
         <div>
-          <label>Amount:</label>
-          <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} required />
+          {/* <label>Amount:</label> */}
+          <input placeholder='Amount' type="number" value={amount} onChange={(e) => setAmount(e.target.value)} required />
         </div>
         <div>
-          <label>Category:</label>
-          <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} required />
+          {/* <label>Category:</label> */}
+          <input placeholder='Category' type="text" value={category} onChange={(e) => setCategory(e.target.value)} required />
         </div>
         <div>
           <label>Date:</label>
