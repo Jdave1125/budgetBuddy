@@ -33,12 +33,21 @@ const Dashboard =() => {
     }
 
     return(
-        <div>
-            <h1>Your dashboard</h1>
-            <ExpenseForm onSubmit={addExpense} />
-            <ExpenseList expenses={expenses} onDelete={deleteExpense} />
+        <div className="dash">
+            <div className="dashText">
+             <h1>Your dashboard</h1>
+             <h2>enter your expenses to the right </h2>
+             <button className="logout" onClick={handleLogout}>Logout</button>
+            </div>
 
-            <button onClick={handleLogout}>Logout</button>
+            <div className="dashright">
+                <ExpenseForm onSubmit={addExpense} />
+                <ExpenseList expenses={expenses} onDelete={deleteExpense} />
+
+                
+
+            </div>
+
         </div>
     )
 }
