@@ -13,12 +13,13 @@ const Signup = () => {
     }
 
     return (
-        <div>
-          <h2>Sign Up</h2>
+        <div className='signup'>
+          <h2 className='loginTitle'>budgetBuddy</h2>
           <form onSubmit={handleSignup}>
             <div>
-              <label>Email:</label>
+              {/* <label>Email:</label> */}
               <input
+                placeholder='whats your email?'
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -26,15 +27,16 @@ const Signup = () => {
               />
             </div>
             <div>
-              <label>Password:</label>
+              {/* <label>Password:</label> */}
               <input
+                placeholder='create a password'
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
             </div>
-            <button type="submit">Sign Up</button>
+            <button className="loginButton" type="submit">Sign Up</button>
           </form>
         </div>
       );

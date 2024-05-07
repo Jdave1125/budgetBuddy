@@ -140,3 +140,17 @@ input{
 .loginButton{
   margin-top: 1.5rem;
 }
+
+
+.signup{
+  display: flex;
+  flex-direction: column;
+  background-color: #fed7ba;
+  border-radius: 50%;
+  height: 50dvh;
+  width: 30dvw;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 100%;
+  
+}
